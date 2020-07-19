@@ -1,0 +1,125 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println("Please enter a number from 0 to 100 :");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        scanner.close();
+
+        int onesPlace = number % 10;
+        int tensPlace = number / 10;
+
+        System.out.print(number + " is written as ");
+
+        // comparisons for the ten's place value
+        if (tensPlace == 0 && onesPlace == 0) {
+            //  1 - if the num is zero
+            System.out.println("zero");
+        } else if (tensPlace == 10 && onesPlace == 0) {
+            //  2 - if the num is hundred
+            System.out.println("hundred");
+        } else if (tensPlace == 1) {
+            //  3
+            if (onesPlace == 1) {
+                //  4
+                System.out.println("eleven");
+                onesPlace = 0;
+            } else if (onesPlace == 2) {
+                //  5
+                System.out.println("twelve");
+                onesPlace = 0;
+            } else if (onesPlace == 3) {
+                //  6
+                System.out.println("thirteen");
+                onesPlace = 0;
+            } else if (onesPlace == 4) {
+                //  7
+                System.out.println("fourteen");
+                onesPlace = 0;
+            } else if (onesPlace == 5) {
+                //  8
+                System.out.println("fifteen");
+                onesPlace = 0;
+            } else if (onesPlace == 6) {
+                //  9
+                System.out.println("sixteen");
+                onesPlace = 0;
+            } else if (onesPlace == 7) {
+                //  10
+                System.out.println("seventeen");
+                onesPlace = 0;
+            } else if (onesPlace == 8) {
+                //  11
+                System.out.println("eighteen");
+                onesPlace = 0;
+            } else if (onesPlace == 9) {
+                //  12
+                System.out.println("nineteen");
+                onesPlace = 0;
+            } else if (onesPlace == 0) {
+                //  13
+                System.out.println("ten");
+            }
+        } else if (tensPlace == 2) {
+            //  14
+            System.out.print("twenty");
+        } else if (tensPlace == 3) {
+            //  15
+            System.out.print("thirty");
+        } else if (tensPlace == 4) {
+            // 16
+            System.out.print("forty");
+        } else if (tensPlace == 5) {
+            //  17
+            System.out.print("fifty");
+        } else if (tensPlace == 6) {
+            //  18
+            System.out.print("sixty");
+        } else if (tensPlace == 7) {
+            //  19
+            System.out.print("seventy");
+        } else if (tensPlace == 8) {
+            //  20
+            System.out.print("eighty");
+        } else if (tensPlace == 9) {
+            //  21
+            System.out.print("ninety");
+        }
+
+        //  comparisons for the one's place value
+        if (onesPlace == 1) {
+            //22
+            System.out.print("-one");
+        } else if (onesPlace == 2) {
+            //  23
+            System.out.print("-two");
+        } else if (onesPlace == 3) {
+            //  24
+            System.out.print("-three");
+        } else if (onesPlace == 4) {
+            //  25
+            System.out.print("-four");
+        } else if (onesPlace == 5) {
+            //  26
+            System.out.print("-five");
+        } else if (onesPlace == 6) {
+            //  27
+            System.out.print("-six");
+        } else if (onesPlace == 7) {
+            //  28
+            System.out.print("-seven");
+        } else if (onesPlace == 8) {
+            //  29
+            System.out.print("-eight");
+        } else if (onesPlace == 9) {
+            // 30
+            System.out.print("-nine");
+        }
+        System.out.print(".");
+    }
+}
+
